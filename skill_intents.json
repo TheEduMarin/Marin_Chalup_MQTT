@@ -1,0 +1,67 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rompemuelles inteligente",
+            "intents": [
+                {
+                    "name": "GetDistanceIntent",
+                    "slots": [],
+                    "samples": [
+                        "cuál es la distancia",
+                        "qué distancia hay",
+                        "cuánto marca el sensor",
+                        "qué mide el sensor",
+                        "cuánto es la distancia"
+                    ]
+                },
+                {
+                    "name": "MoveServoIntent",
+                    "slots": [
+                        {
+                            "name": "Action",
+                            "type": "ActionType"
+                        }
+                    ],
+                    "samples": [
+                        "{Action} el servomotor",
+                        "quiero que {Action} el servo",
+                        "por favor {Action} el servo",
+                        "{Action} el motor",
+                        "{Action} el servo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "ActionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "abrir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cerrar"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
